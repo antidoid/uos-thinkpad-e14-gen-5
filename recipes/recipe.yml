@@ -77,4 +77,8 @@ modules:
       - source: dconf
         destination: /etc/dconf/db/local.d
 
+  - type: bling
+    install:
+      - dconf-update-service # a service unit that updates the dconf db on boot
+
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
