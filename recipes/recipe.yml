@@ -18,17 +18,17 @@ modules:
                        # while putting files in /etc/ is done on booted system by system administrators.
                        # read more about this in files module reference.
   
-  # - type: rpm-ostree
-  #   repos:
-  #     - https://copr.fedorainfracloud.org/coprs/antiderivative/libfprint-tod-goodix-0.0.9/repo/fedora-%OS_VERSION%/antiderivative-libfprint-tod-goodix-0.0.9-fedora-%OS_VERSION%.repo
-  #   replace:
-  #     - from-repo: https://copr.fedorainfracloud.org/coprs/antiderivative/libfprint-tod-goodix-0.0.9/repo/fedora-%OS_VERSION%/antiderivative-libfprint-tod-goodix-0.0.9-fedora-%OS_VERSION%.repo
-  #       packages:
-  #         - libfprint-tod
-  #   remove:
-  #     - libfprint
-  #   install:
-  #     - libfprint-tod-goodix
+  - type: rpm-ostree
+    repos:
+      - https://copr.fedorainfracloud.org/coprs/antiderivative/libfprint-tod-goodix-0.0.9/repo/fedora-40/antiderivative-libfprint-tod-goodix-0.0.9-fedora-40.repo
+    replace:
+      - from-repo: https://copr.fedorainfracloud.org/coprs/antiderivative/libfprint-tod-goodix-0.0.9/repo/fedora-40/antiderivative-libfprint-tod-goodix-0.0.9-fedora-40.repo
+        packages:
+          - libfprint-tod
+    remove:
+      - libfprint
+    install:
+      - libfprint-tod-goodix
 
 
   - type: default-flatpaks
@@ -62,9 +62,9 @@ modules:
     update-interval: ['7d', '0h', '0m']
     
   # Install all the cli tools that I use
-  - type: script
-    snippets:
-      - "brew install autojump bat btop eza gh jq lazygit neovim node ripgrep starship tldr tmux zsh fortune"
+  # - type: script
+  #   snippets:
+  #     - "brew install autojump bat btop eza gh jq lazygit neovim node ripgrep starship tldr tmux zsh fortune"
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
