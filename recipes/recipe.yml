@@ -4,8 +4,8 @@ name: uos-thinkpad-e14-gen-5
 description: This is my personal OS image for my lenovo thinkpad e14 gen 5.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/bluefin-dx:stable
-image-version: latest # latest is also supported if you want new updates ASAP
+base-image: ghcr.io/ublue-os/bluefin-dx
+image-version: stable # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
 # you can include multiple instances of the same module
