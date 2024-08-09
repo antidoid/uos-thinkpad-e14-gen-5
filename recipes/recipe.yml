@@ -72,4 +72,9 @@ modules:
       - 5669 # Compact Top Bar
       - 4651 # Notification Banner Reloaded
 
+  - type: files
+    files:
+      - source: dconf
+        destination: /etc/dconf/db/local.d
+
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
