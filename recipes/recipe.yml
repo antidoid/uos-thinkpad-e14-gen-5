@@ -18,17 +18,17 @@ modules:
                        # while putting files in /etc/ is done on booted system by system administrators.
                        # read more about this in files module reference.
   
-  - type: rpm-ostree
-    repos:
-      - https://copr.fedorainfracloud.org/coprs/antiderivative/libfprint-tod-goodix-0.0.9/repo/fedora-%OS_VERSION%/antiderivative-libfprint-tod-goodix-0.0.9-fedora-%OS_VERSION%.repo
-    replace:
-      - from-repo: https://copr.fedorainfracloud.org/coprs/antiderivative/libfprint-tod-goodix-0.0.9/repo/fedora-%OS_VERSION%/antiderivative-libfprint-tod-goodix-0.0.9-fedora-%OS_VERSION%.repo
-        packages:
-          - libfprint-tod
-    remove:
-      - libfprint
-    install:
-      - libfprint-tod-goodix
+  # - type: rpm-ostree
+  #   repos:
+  #     - https://copr.fedorainfracloud.org/coprs/antiderivative/libfprint-tod-goodix-0.0.9/repo/fedora-%OS_VERSION%/antiderivative-libfprint-tod-goodix-0.0.9-fedora-%OS_VERSION%.repo
+  #   replace:
+  #     - from-repo: https://copr.fedorainfracloud.org/coprs/antiderivative/libfprint-tod-goodix-0.0.9/repo/fedora-%OS_VERSION%/antiderivative-libfprint-tod-goodix-0.0.9-fedora-%OS_VERSION%.repo
+  #       packages:
+  #         - libfprint-tod
+  #   remove:
+  #     - libfprint
+  #   install:
+  #     - libfprint-tod-goodix
 
 
   - type: default-flatpaks
