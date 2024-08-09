@@ -39,8 +39,15 @@ modules:
       # repo-name: flathub
       # repo-title: "Flathub (system-wide)" # Optional; this sets the remote's user-facing name in graphical frontends like GNOME Software
       install:
-        # - org.mozilla.firefox
-        # - org.gnome.Loupe
+        - com.github.tchx84.Flatseal
+        - com.github.tenderowl.frog
+        - com.spotify.Client
+        - com.stremio.Stremio
+        - nz.mega.MEGAsync
+        - org.gnome.gitlab.somas.Apostrophe
+        - org.libreoffice.LibreOffice
+        - org.mozilla.firefox
+        - com.rtosta.zapzap
         # - one.ablaze.floorp//lightning # This is an example of flatpak which has multiple branches in selection (flatpak//branch).
       # Flatpak runtimes are not supported (like org.winehq.Wine//stable-23.08),
       # only normal flatpak applications are (like Floorp Lightning web browser in this example).
