@@ -54,6 +54,12 @@ modules:
       # Installing different branches of the same Flatpak is not supported.
       remove:
       # - org.gnome.eog
+
+  # Install homebrew
+  - type: brew
+    nofile-limits: true # increase nofile limits
+    brew-analytics: false # disable telemetry
+    update-interval: ['7d', '0h', '0m']
     
   # Install all the cli tools that I use
   - type: script
