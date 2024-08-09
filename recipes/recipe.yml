@@ -17,18 +17,18 @@ modules:
                        # put configuration files you want in /usr/etc/ inside the image
                        # while putting files in /etc/ is done on booted system by system administrators.
                        # read more about this in files module reference.
-
+  
   - type: rpm-ostree
     repos:
-      # - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
+      - https://copr.fedorainfracloud.org/coprs/antiderivative/libfprint-tod-goodix-0.0.9/repo/fedora-%OS_VERSION%/antiderivative-libfprint-tod-goodix-0.0.9-fedora-%OS_VERSION%.repo
     install:
-      # - micro
-      # - starship
+      - libfprint-tod-goodix
     remove:
-      # example: removing firefox (in favor of the flatpak)
-      # "firefox" is the main package, "firefox-langpacks" is a dependency
-      # - firefox
-      # - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
+      - libfprint
+    replace:
+      - from-repo: https://copr.fedorainfracloud.org/coprs/antiderivative/libfprint-tod-goodix-0.0.9/repo/fedora-%OS_VERSION%/antiderivative-libfprint-tod-goodix-0.0.9-fedora-%OS_VERSION%.repo
+        packages:
+          - libfprint-tod
 
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
