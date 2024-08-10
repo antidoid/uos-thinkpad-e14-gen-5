@@ -33,7 +33,6 @@ modules:
     install:
       - libfprint-tod
       - libfprint-tod-goodix
-      - autojump
       - bat
       - btop
       - eza
