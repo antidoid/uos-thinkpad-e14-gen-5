@@ -47,6 +47,8 @@ modules:
       - tmux
       - zsh
       - fortune-mod
+      - zsh-autosuggestions
+      - zoxide
 
 
   - type: default-flatpaks
