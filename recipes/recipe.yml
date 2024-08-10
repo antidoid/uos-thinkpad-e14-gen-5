@@ -48,6 +48,7 @@ modules:
       - zsh
       - fortune-mod
       - zsh-autosuggestions
+      - zsh-syntax-highlighting
       - zoxide
 
 
