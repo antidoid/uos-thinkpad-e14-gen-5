@@ -31,6 +31,20 @@ modules:
     install:
       - libfprint-tod
       - libfprint-tod-goodix
+      - autojump
+      - bat
+      - btop
+      - eza
+      - gh
+      - jq
+      - lazygit
+      - neovim
+      - ripgrep
+      - starship
+      - tldr
+      - tmux
+      - zsh
+      - fortune-mod
 
 
   - type: default-flatpaks
