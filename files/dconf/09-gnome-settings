@@ -1,6 +1,6 @@
 [org/gnome/shell]
 disable-user-extensions=false
-enabled-extensions=['blur-my-shell@aunetx', 'dash-to-dock@micxgx.gmail.com', 'InternetSpeedMeter@alshakib.dev', 'gnome-compact-top-bar@metehan-arslan.github.io', 'notification-banner-reloaded@marcinjakubowski.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com']
+enabled-extensions=['blur-my-shell@aunetx', 'dash-to-dock@micxgx.gmail.com', 'InternetSpeedMeter@alshakib.dev', 'gnome-compact-top-bar@metehan-arslan.github.io', 'notification-banner-reloaded@marcinjakubowski.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com',  'quick-settings-tweaks@qwreey']
 disabled-extensions=['']
 favorite-apps=['org.gnome.Nautilus.desktop', 'org.gnome.Ptyxis.desktop', 'org.mozilla.firefox.desktop', 'com.spotify.Client.desktop', 'com.stremio.Stremio.desktop', 'dev.zed.Zed.desktop']
 last-selected-power-profile='power-saver'
@@ -20,7 +20,12 @@ dock-fixed=false
 [org/gnome/shell/extensions/notification-banner-reloaded]
 always-minimized=1
 anchor-horizontal=1
-animation-direction=1
+animation-direction=
+
+[org/gnome/shell/extensions/quick-settings-tweaks]
+volume-mixer-enabled=false
+user-removed-buttons=['DarkModeToggle']
+list-buttons='[{"name":"SystemItem","title":null,"visible":true},{"name":"OutputStreamSlider","title":null,"visible":false},{"name":"InputStreamSlider","title":null,"visible":false},{"name":"BrightnessItem","title":null,"visible":false},{"name":"NMWiredToggle","title":null,"visible":false},{"name":"NMWirelessToggle","title":"Wi-Fi","visible":true},{"name":"NMModemToggle","title":null,"visible":false},{"name":"NMBluetoothToggle","title":null,"visible":false},{"name":"NMVpnToggle","title":null,"visible":false},{"name":"BluetoothToggle","title":"Bluetooth","visible":true},{"name":"PowerProfilesToggle","title":"Power Mode","visible":true},{"name":"NightLightToggle","title":"Night Light","visible":true},{"name":"DarkModeToggle","title":"Dark Style","visible":true},{"name":"KeyboardBrightnessToggle","title":"Keyboard","visible":false},{"name":"RfkillToggle","title":"Airplane Mode","visible":true},{"name":"RotationToggle","title":"Auto Rotate","visible":false},{"name":"DndQuickToggle","title":"Do Not Disturb","visible":true},{"name":"BackgroundAppsToggle","title":"No Background Apps","visible":false},{"name":"MediaSection","title":null,"visible":false},{"name":"Notifications","title":null,"visible":false}]'
 
 [org/gnome/shell/extensions/user-theme]
 name='Yaru-prussiangreen-dark'
@@ -123,3 +128,7 @@ night-light-temperature=uint32 4576
 night-light-schedule-automatic=false
 night-light-schedule-from=7.0
 night-light-schedule-to=7.0
+
+[org/gnome/desktop/app-folders/folders/Office]
+apps=['org.libreoffice.LibreOffice.math.desktop', 'org.libreoffice.LibreOffice.impress.desktop', 'org.libreoffice.LibreOffice.draw.desktop', 'org.libreoffice.LibreOffice.calc.desktop', 'org.libreoffice.LibreOffice.base.desktop', 'org.libreoffice.LibreOffice.writer.desktop']
+name='Office'
