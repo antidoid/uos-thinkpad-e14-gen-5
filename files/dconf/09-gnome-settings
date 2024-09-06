@@ -20,7 +20,7 @@ dock-fixed=false
 [org/gnome/shell/extensions/notification-banner-reloaded]
 always-minimized=1
 anchor-horizontal=1
-animation-direction=
+animation-direction=1
 
 [org/gnome/shell/extensions/quick-settings-tweaks]
 volume-mixer-enabled=false
