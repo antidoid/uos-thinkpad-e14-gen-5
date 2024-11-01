@@ -103,12 +103,6 @@ modules:
       - source: dconf
         destination: /etc/dconf/db/local.d
 
-  # Udev rules
-  - type: files
-    files:
-      - source: rules
-        destination: /etc/udev/rules.d
-
   - type: bling
     install:
       - dconf-update-service # a service unit that updates the dconf db on boot
