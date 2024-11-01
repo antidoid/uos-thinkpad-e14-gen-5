@@ -97,10 +97,17 @@ modules:
       - 4651 # Notification Banner Reloaded
       - 5446 # Quick Settings Tweak
 
+  # Gnome customizations
   - type: files
     files:
       - source: dconf
         destination: /etc/dconf/db/local.d
+
+  # Udev rules
+  - type: files
+    files:
+      - source: rules
+        destination: /etc/udev/rules.d
 
   - type: bling
     install:
