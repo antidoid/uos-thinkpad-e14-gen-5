@@ -95,7 +95,7 @@ modules:
       - 2980 # Internet Speed Meter
       - 5669 # Compact Top Bar
       - 4651 # Notification Banner Reloaded
-      - 5446 # Quick Settings Tweak
+      # - 5446 # Quick Settings Tweak
 
   # Gnome customizations
   - type: files

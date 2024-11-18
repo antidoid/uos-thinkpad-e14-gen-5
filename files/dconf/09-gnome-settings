@@ -21,12 +21,6 @@ always-minimized=1
 anchor-horizontal=1
 animation-direction=1
 
-[org/gnome/shell/extensions/quick-settings-tweaks]
-volume-mixer-enabled=false
-input-show-selected=true
-output-show-selected=true
-user-removed-buttons=['DarkModeToggle']
-
 [org/gnome/shell/extensions/user-theme]
 name='Yaru-prussiangreen-dark'
 
