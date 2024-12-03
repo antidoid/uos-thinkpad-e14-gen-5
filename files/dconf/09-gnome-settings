@@ -95,7 +95,7 @@ xkb-options=['caps:ctrl_modifier']
 
 [org/gnome/Ptyxis/Profiles/2871e8027773ae74d6c87a5f659bbc74]
 label='My Custom Theme'
-palette='Shaman'
+palette='Frontend Delight'
 
 [org/gnome/Ptyxis]
 audible-bell=false
