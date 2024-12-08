@@ -110,7 +110,7 @@ restore-window-size=false
 use-system-font=false
 window-size=(uint32 150, uint32 32)
 
-[org/gnome/Ptyxi/Shortcuts]
+[org/gnome/Ptyxis/Shortcuts]
 close-tab='<Shift><Control>w'
 move-next-tab='<Control>Tab'
 move-previous-tab='<Shift><Control>Tab'
