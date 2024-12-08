@@ -71,7 +71,7 @@ toggle-tiled-right=['<Super>k']
 
 [org/gnome/settings-daemon/plugins/media-keys]
 www=['<Super>b']
-screensaver=['<Shift><Super>Escape']
+screensaver=['<Shift><Super>q']
 
 custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/']
 
