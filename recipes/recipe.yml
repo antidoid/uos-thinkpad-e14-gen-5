@@ -88,7 +88,7 @@ modules:
   - type: brew
     nofile-limits: true # increase nofile limits
     brew-analytics: false # disable telemetry
-    update-interval: "24h"
+    update-interval: "7d"
     
   - type: gnome-extensions
     install:
