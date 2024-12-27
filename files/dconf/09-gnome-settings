@@ -15,6 +15,7 @@ background-opacity=0.5
 hot-keys=false
 show-icons-emblems=false
 dock-fixed=false
+apply-custom-theme=false
 
 [org/gnome/shell/extensions/notification-banner-reloaded]
 always-minimized=1
