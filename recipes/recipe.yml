@@ -30,6 +30,7 @@ modules:
       - https://copr.fedorainfracloud.org/coprs/antiderivative/libfprint-tod-goodix-0.0.9/repo/fedora-%OS_VERSION%/antiderivative-libfprint-tod-goodix-0.0.9-fedora-%OS_VERSION%.repo
       - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
       - https://copr.fedorainfracloud.org/coprs/atim/lazygit/repo/fedora-%OS_VERSION%/atim-lazygit-fedora-%OS_VERSION%.repo
+      - https://copr.fedorainfracloud.org/coprs/pgdev/ghostty/repo/fedora-%OS_VERSION%/pgdev-ghostty-fedora-%OS_VERSION%.repo
     remove:
       - libfprint
     install:
@@ -51,6 +52,7 @@ modules:
       - zsh-autosuggestions
       - zsh-syntax-highlighting
       - zoxide
+      - ghostty
 
 
   - type: default-flatpaks
