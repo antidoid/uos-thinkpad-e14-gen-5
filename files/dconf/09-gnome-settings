@@ -16,6 +16,8 @@ hot-keys=false
 show-icons-emblems=false
 dock-fixed=false
 apply-custom-theme=false
+preferred-monitor-by-connector='HDMI-1'
+
 
 [org/gnome/shell/extensions/notification-banner-reloaded]
 always-minimized=1
