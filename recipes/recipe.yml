@@ -105,6 +105,12 @@ modules:
     files:
       - source: dconf
         destination: /etc/dconf/db/local.d
+      - source: evremap/usr
+        destination: /usr/lib/systemd/system
+      - source: evremap/bin
+        destination: /usr/bin
+      - source: evremap/etc
+        destination: /etc
 
   - type: bling
     install:
