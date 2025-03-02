@@ -51,6 +51,7 @@ modules:
       - zsh-autosuggestions
       - zsh-syntax-highlighting
       - zoxide
+      - libevdev-devel
 
 
   - type: default-flatpaks

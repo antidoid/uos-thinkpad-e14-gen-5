@@ -95,7 +95,7 @@ command='flatpak run com.rtosta.zapzap'
 name='Open WhatsApp'
 
 [org/gnome/desktop/input-sources]
-xkb-options=['caps:ctrl_modifier']
+xkb-options=['ctrl:nocaps', 'shift:both_capslock_cancel']
 
 [org/gnome/Ptyxis/Profiles/2871e8027773ae74d6c87a5f659bbc74]
 label='My Custom Theme'
