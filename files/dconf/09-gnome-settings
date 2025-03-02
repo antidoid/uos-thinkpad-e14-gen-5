@@ -18,6 +18,12 @@ dock-fixed=false
 apply-custom-theme=false
 preferred-monitor-by-connector='HDMI-1'
 
+[org/gnome/shell/extensions/quick-settings-tweaks]
+volume-mixer-enabled=false
+input-show-selected=true
+output-show-selected=true
+datemenu-disable-menu=true
+toggles-layout-enabled = true
 
 [org/gnome/shell/extensions/notification-banner-reloaded]
 always-minimized=1
