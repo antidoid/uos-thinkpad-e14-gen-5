@@ -83,7 +83,7 @@ toggle-tiled-right=['<Super>k']
 www=['<Super>b']
 screensaver=['<Shift><Super>q']
 
-custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/']
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/']
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
 binding='<Super>Return'
@@ -95,13 +95,8 @@ binding='<Super>e'
 command='nautilus /home/antid'
 name='File Manager'
 
-[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2]
-binding='<Super>Messenger'
-command='flatpak run com.rtosta.zapzap'
-name='Open WhatsApp'
-
 [org/gnome/desktop/input-sources]
-xkb-options=['ctrl:nocaps', 'shift:both_capslock_cancel']
+xkb-options=['shift:both_capslock_cancel']
 
 [org/gnome/Ptyxis/Profiles/2871e8027773ae74d6c87a5f659bbc74]
 label='My Custom Theme'
