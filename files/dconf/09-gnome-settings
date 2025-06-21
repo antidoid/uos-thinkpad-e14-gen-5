@@ -1,6 +1,6 @@
 [org/gnome/shell]
 disable-user-extensions=false
-enabled-extensions=['blur-my-shell@aunetx', 'dash-to-dock@micxgx.gmail.com', 'InternetSpeedMeter@alshakib.dev', 'gnome-compact-top-bar@metehan-arslan.github.io', 'notification-banner-reloaded@marcinjakubowski.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com',  'quick-settings-tweaks@qwreey']
+enabled-extensions=['blur-my-shell@aunetx', 'dash-to-dock@micxgx.gmail.com', 'InternetSpeedMeter@alshakib.dev', 'gnome-compact-top-bar@metehan-arslan.github.io', 'notification-banner-reloaded@marcinjakubowski.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com']
 disabled-extensions=['']
 favorite-apps=['org.gnome.Nautilus.desktop', 'org.gnome.Ptyxis.desktop', 'com.spotify.Client.desktop', 'app.zen_browser.zen', 'com.stremio.Stremio.desktop', 'dev.zed.Zed.desktop']
 
@@ -17,13 +17,6 @@ show-icons-emblems=false
 dock-fixed=false
 apply-custom-theme=false
 preferred-monitor-by-connector='HDMI-1'
-
-[org/gnome/shell/extensions/quick-settings-tweaks]
-volume-mixer-enabled=false
-input-show-selected=true
-output-show-selected=true
-datemenu-disable-menu=true
-toggles-layout-enabled = true
 
 [org/gnome/shell/extensions/notification-banner-reloaded]
 always-minimized=1
