@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=https://schema.blue-build.org/recipe-v2.json
+# yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
 
 # image will be published to ghcr.io/<user>/<name>
 name: uos-thinkpad-e14-gen-5
@@ -56,26 +56,26 @@ modules:
 
   - type: default-flatpaks
     configurations:
-      install:
-        - org.gnome.gitlab.somas.Apostrophe
-        - org.gnome.Snapshot
-        - org.gnome.Evince
-        - org.gnome.Loupe
-        - org.gnome.Calculator
-        - org.gnome.TextEditor
-        - org.gnome.Weather
-        - org.gnome.Calendar
-        - com.github.tchx84.Flatseal
-        - com.github.tenderowl.frog
-        - com.spotify.Client
-        - com.stremio.Stremio
-        - nz.mega.MEGAsync
-        - org.libreoffice.LibreOffice
-        - org.mozilla.firefox
-        - com.rtosta.zapzap
-        - dev.zed.Zed
-        - io.missioncenter.MissionCenter
-      remove: []
+      - install:
+          - org.gnome.gitlab.somas.Apostrophe
+          - org.gnome.Snapshot
+          - org.gnome.Evince
+          - org.gnome.Loupe
+          - org.gnome.Calculator
+          - org.gnome.TextEditor
+          - org.gnome.Weather
+          - org.gnome.Calendar
+          - com.github.tchx84.Flatseal
+          - com.github.tenderowl.frog
+          - com.spotify.Client
+          - com.stremio.Stremio
+          - nz.mega.MEGAsync
+          - org.libreoffice.LibreOffice
+          - org.mozilla.firefox
+          - com.rtosta.zapzap
+          - dev.zed.Zed
+          - io.missioncenter.MissionCenter
+      - remove: []
 
   # Install homebrew
   - type: brew
