@@ -56,10 +56,9 @@ modules:
 
   - type: default-flatpaks
     configurations:
-      - notify: true
-        scope: user
+      - scope: system
         repo:
-          title: Flathub (user)
+          title: Flathub (system)
         install:
           - org.gnome.gitlab.somas.Apostrophe
           - org.gnome.Snapshot
@@ -95,6 +94,10 @@ modules:
       - 5669 # Compact Top Bar
       - 4651 # Notification Banner Reloaded
       # - 5446 # Quick Settings Tweak
+      
+  - type: bling
+    install:
+      - dconf-update-service # a service unit that updates the dconf db on boot
 
   # Gnome customizations
   - type: files
@@ -108,8 +111,9 @@ modules:
       - source: evremap/etc
         destination: /etc
 
-  - type: bling
-    install:
-      - dconf-update-service # a service unit that updates the dconf db on boot
-
+type: systemd
+system:
+  enabled:
+    - evremap.service
+    
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
