@@ -56,7 +56,11 @@ modules:
 
   - type: default-flatpaks
     configurations:
-      - install:
+      - notify: true
+        scope: user
+        repo:
+          title: Flathub (user)
+        install:
           - org.gnome.gitlab.somas.Apostrophe
           - org.gnome.Snapshot
           - org.gnome.Evince
@@ -75,7 +79,6 @@ modules:
           - com.rtosta.zapzap
           - dev.zed.Zed
           - io.missioncenter.MissionCenter
-      - remove: []
 
   # Install homebrew
   - type: brew
