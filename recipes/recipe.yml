@@ -79,6 +79,7 @@ modules:
           - com.rtosta.zapzap
           - dev.zed.Zed
           - io.missioncenter.MissionCenter
+          - app.zen_browser.zen
 
   # Install homebrew
   - type: brew
