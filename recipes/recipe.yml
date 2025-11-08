@@ -85,20 +85,7 @@ modules:
     nofile-limits: true # increase nofile limits
     brew-analytics: false # disable telemetry
     update-interval: "7d"
-
-  - type: gnome-extensions
-    install:
-      - 3193 # Blur my shell
-      # - 307 # Dash-to-Dock
-      - 2980 # Internet Speed Meter
-      - 5669 # Compact Top Bar
-      - 4651 # Notification Banner Reloaded
-      # - 5446 # Quick Settings Tweak
-      
-  - type: bling
-    install:
-      - dconf-update-service # a service unit that updates the dconf db on boot
-        
+    
   - type: systemd
     system:
       enabled:
