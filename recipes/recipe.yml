@@ -85,6 +85,15 @@ modules:
     nofile-limits: true # increase nofile limits
     brew-analytics: false # disable telemetry
     update-interval: "7d"
+
+  - type: files
+    files:
+      - source: evremap/usr
+        destination: /usr/lib/systemd/system
+      - source: evremap/bin
+        destination: /usr/bin
+      - source: evremap/etc
+        destination: /etc
     
   - type: systemd
     system:
