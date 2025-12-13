@@ -38,7 +38,7 @@ modules:
       - libfprint-tod-goodix
       - bat
       - btop
-      - eza
+      # - eza
       - gh
       - jq
       - lazygit
