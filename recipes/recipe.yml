@@ -92,7 +92,7 @@ modules:
       # - 307 # Dash-to-Dock
       - 2980 # Internet Speed Meter
       - 5669 # Compact Top Bar
-      - 4651 # Notification Banner Reloaded
+      # - 4651 # Notification Banner Reloaded
       # - 5446 # Quick Settings Tweak
       
   - type: bling
