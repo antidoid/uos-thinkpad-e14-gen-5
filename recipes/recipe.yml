@@ -2,6 +2,7 @@
 
 # image will be published to ghcr.io/<user>/<name>
 name: cosmic
+alt-tags: [ "stable" ]
 # description will be included in the image's metadata
 description: This is my personal OS image for my lenovo thinkpad e14 gen 5.
 
