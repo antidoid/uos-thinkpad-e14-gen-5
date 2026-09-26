@@ -7,7 +7,7 @@ alt-tags: [ "stable" ]
 description: This is my personal OS image for my lenovo thinkpad e14 gen 5.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/razorfinos-org/razorfin
+base-image: ghcr.io/razorfinos-org/razorfin-dx
 image-version: stable
 
 # module configuration, executed in order
