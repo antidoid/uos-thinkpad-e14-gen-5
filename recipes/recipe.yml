@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
 
 # image will be published to ghcr.io/<user>/<name>
-name: niri
+name: cosmic
 # description will be included in the image's metadata
 description: This is my personal OS image for my lenovo thinkpad e14 gen 5.
 
@@ -31,8 +31,8 @@ modules:
       - https://copr.fedorainfracloud.org/coprs/antiderivative/libfprint-tod-goodix-0.0.9/repo/fedora-%OS_VERSION%/antiderivative-libfprint-tod-goodix-0.0.9-fedora-%OS_VERSION%.repo
       - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
       - https://copr.fedorainfracloud.org/coprs/atim/lazygit/repo/fedora-%OS_VERSION%/atim-lazygit-fedora-%OS_VERSION%.repo
-    # remove:
-      # - libfprint
+    remove:
+      - libfprint
     install:
       - fprintd
       - libfprint-tod
