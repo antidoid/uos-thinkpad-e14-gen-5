@@ -58,6 +58,7 @@ modules:
       - plasma-bigscreen
       - plasma-bigscreen-wayland
       - plasma-workspace
+      - plasma-nm
 
   - type: default-flatpaks
     configurations:
