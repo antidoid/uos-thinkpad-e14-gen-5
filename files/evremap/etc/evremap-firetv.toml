@@ -1,4 +1,4 @@
-device_name = "Amazon Remote Keyboard"
+device_name = "d0:39:57:37:fe:94"
 
 [[remap]]
 input = ["KEY_KPENTER"]
