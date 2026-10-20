@@ -55,6 +55,7 @@ modules:
       - zsh-syntax-highlighting
       - zoxide
       - libevdev-devel
+      - plasma-bigscreen 
 
   - type: default-flatpaks
     configurations:
@@ -72,7 +73,7 @@ modules:
           - org.gnome.Calendar
           - com.github.tchx84.Flatseal
           - com.github.tenderowl.frog
-          - com.spotify.Client
+          # - com.spotify.Client
           - com.stremio.Stremio
           - nz.mega.MEGAsync
           - org.libreoffice.LibreOffice
@@ -81,6 +82,7 @@ modules:
           - dev.zed.Zed
           - io.missioncenter.MissionCenter
           - app.zen_browser.zen
+          - rocks.shy.VacuumTube
 
   # Install homebrew
   - type: brew
