@@ -4,9 +4,3 @@ device_name = "AT Translated Set 2 keyboard"
 input = "KEY_CAPSLOCK"
 hold = ["KEY_LEFTCTRL"]
 tap = ["KEY_ESC"]
-
-device_name = "Amazon Remote Keyboard"
-
-[[remap]]
-input = ["KEY_KPENTER"]
-output = ["KEY_ENTER"]

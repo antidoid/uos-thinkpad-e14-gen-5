@@ -1,0 +1,5 @@
+device_name = "Amazon Remote Keyboard"
+
+[[remap]]
+input = ["KEY_KPENTER"]
+output = ["KEY_ENTER"]
