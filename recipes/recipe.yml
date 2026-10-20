@@ -59,6 +59,7 @@ modules:
       - plasma-bigscreen-wayland
       - plasma-workspace
       - plasma-nm
+      - kde-connect
 
   - type: default-flatpaks
     configurations:
