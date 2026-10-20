@@ -2,6 +2,7 @@
 WorkingDirectory=/
 ExecStart=bash -c "/usr/bin/evremap remap /etc/evremap-%i.toml -d 0"
 Restart=always
+RestartSec=10
 
 [Install]
 WantedBy=multi-user.target
