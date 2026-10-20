@@ -1,8 +1,8 @@
 [Service]
 WorkingDirectory=/
-ExecStart=bash -c "/usr/bin/evremap remap /etc/evremap-%i.toml -d 0"
+ExecStart=bash -c 'if [ "%i" = "firetv" ]; then DEV=$(/usr/bin/evremap list-devices 2>/dev/null | grep -oE "Amazon Remote Keyboard|AR Keyboard" | head -n 1); if [ -n "$DEV" ]; then sed -i "s/^device_name = .*/device_name = \"$DEV\"/" /etc/evremap-firetv.toml; fi; fi; exec /usr/bin/evremap remap /etc/evremap-%i.toml -d 0'
 Restart=always
-RestartSec=10
+RestartSec=3
 
 [Install]
 WantedBy=multi-user.target
