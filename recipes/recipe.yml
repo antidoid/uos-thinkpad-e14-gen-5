@@ -1,13 +1,13 @@
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
 
 # image will be published to ghcr.io/<user>/<name>
-name: cosmic
+name: kde
 alt-tags: [ "stable" ]
 # description will be included in the image's metadata
 description: This is my personal OS image for my lenovo thinkpad e14 gen 5.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/razorfinos-org/razorfin-dx
+base-image: ghcr.io/ublue-os/bazzite-dx
 image-version: stable
 
 # module configuration, executed in order
@@ -46,11 +46,6 @@ modules:
       - zsh-syntax-highlighting
       - zoxide
       - libevdev-devel
-      - plasma-bigscreen
-      - plasma-bigscreen-wayland
-      - plasma-workspace
-      - plasma-nm
-      - kde-connect
 
   - type: default-flatpaks
     configurations:
@@ -58,24 +53,13 @@ modules:
         repo:
           title: Flathub (system)
         install:
-          - org.gnome.gitlab.somas.Apostrophe
-          - org.gnome.Snapshot
-          - org.gnome.Evince
-          - org.gnome.Loupe
-          - org.gnome.Calculator
-          - org.gnome.TextEditor
-          - org.gnome.Weather
-          - org.gnome.Calendar
           - com.github.tchx84.Flatseal
           - com.github.tenderowl.frog
-          # - com.spotify.Client
           - com.stremio.Stremio
           - nz.mega.MEGAsync
           - org.libreoffice.LibreOffice
-          - org.mozilla.firefox
           - com.rtosta.zapzap
           - dev.zed.Zed
-          - io.missioncenter.MissionCenter
           - app.zen_browser.zen
           - rocks.shy.VacuumTube
 
