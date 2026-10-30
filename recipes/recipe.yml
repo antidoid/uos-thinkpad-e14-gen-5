@@ -93,5 +93,8 @@ modules:
         - evremap@thinkpadkeyboard.service
         - evremap@firetv.service
         - fprintd.service
+    user:
+      enabled:
+        - waydroid-session.service
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
