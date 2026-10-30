@@ -1,0 +1,19 @@
+[Unit]
+Description=Waydroid session (background)
+After=graphical-session.target
+PartOf=graphical-session.target
+
+[Service]
+Type=simple
+# Wait up to 30s for the compositor's Wayland socket
+ExecStartPre=/bin/sh -c 'for i in $(seq 1 30); do [ -S "$XDG_RUNTIME_DIR/${WAYLAND_DISPLAY:-wayland-0}" ] && exit 0; sleep 1; done; exit 1'
+# Extra buffer so the shell/compositor finishes starting
+ExecStartPre=/bin/sleep 5
+ExecStart=/usr/bin/waydroid session start
+ExecStop=/usr/bin/waydroid session stop
+Restart=on-failure
+RestartSec=5
+TimeoutStopSec=30
+
+[Install]
+WantedBy=graphical-session.target
